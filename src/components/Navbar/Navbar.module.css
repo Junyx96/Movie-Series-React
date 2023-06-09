@@ -1,0 +1,111 @@
+.menu{
+    background: linear-gradient(to top, #0166FC, #0098FE);
+   color: white;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 38px;
+    margin-left: 9vw;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+    
+}
+.buttonFrial{
+    padding: 8px;
+    background-color: #414141;
+    color: white;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 9vw 0 40px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+    font-weight: bold;
+
+}
+.sub_menu{
+    background-color: #414141;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 75px; 
+    box-shadow: 0 1px 4px 2px rgb(0, 0, 0, 0.6);
+}
+.sub_title{
+    font-size: 28px;
+    margin-left: 9vw;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+}
+.login{
+    font-size: 18px;
+    
+}
+
+.togle{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu{   
+        height: 55px;
+        display: flex;
+
+    }
+    .title{
+        font-size: 25px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);   
+    }
+    .buttonFrial{
+    margin-right: 9vw;
+        
+    }
+    .sub_menu{
+        height: 55px;
+    }
+	.sub_title{
+        font-size: 25px;
+    }
+    
+    /* .togle{
+        visibility: visible;
+    } */
+}
+
+@media screen and (max-width: 569px){
+    .buttonFrial{
+        margin: 0;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+      .title{
+          display: flex;
+        font-size: 25px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+        margin: 0;
+    }
+      .sub_menu{
+        display: flex;
+        justify-content: center;
+      }
+       .login span{
+        display: none;
+    } 
+      .sub_title{
+        margin: 0
+      }
+}
+
+@media screen and (max-width: 370px){
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+    .buttonFrial{
+        display: none;
+    }
+}
